@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+body {
+    font-family: "Jura", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+}
+
+#all-products {
+    display: none;
+}
+
+#pizza-page {
+    display: none;
+}
+
+#first-page {
+    display: block;
+}
+
+#about {
+    display: none;
+}
+
+#basket {
+    display: none;
+}
+
+.about {
+    font-family: 'Jura', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #d3e2c6;
+    /* Світло-зелений фон */
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/pizza.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 1000;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.pizza-banner {
+    position: relative;
+    background: url('../img/pizza\ 2\ block\ for\ site.png') no-repeat center center/cover;
+    /* Замініть на шлях до вашого зображення */
+    height: 500px;
+    /* Висота банера */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.pizza-banner h1 {
+    /* Сайт замовлення піци */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 671px;
+    height: 76px;
+    left: 384px;
+    top: 211px;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+    /* identical to box height */
+
+    color: #FFFFFF;
+
+
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Тінь для тексту */
+    top: 100px;
+}
+
+.input-container {
+    width: 220px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px black;
+}
+
+.input-container:hover>.icon {
+    animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+
+    50% {
+        transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+img {
+    width: 100%;
+}
+
+.buttons-container {
+    background-color: #333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 1px;
+}
+
+.button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+.youtube {
+    background-color: red;
+}
+
+.telegram {
+    background-color: #0088cc;
+}
+
+.gmail {
+    background-color: limegreen;
+}
+
+footer {
+    /* Відступ від нижнього краю */
+    color: black;
+}
+
+.pizza-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.popular-pizza {
+    /* Найпопулярніші піци */
+    /* Найпопулярніші піци */
+    text-align: center;
+
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #000000;
+
+
+}
+
+.text-container {
+    max-width: 600px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
